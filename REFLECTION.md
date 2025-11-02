@@ -22,4 +22,3 @@ overall I need to keep practicing and using the pycharm console. notice better u
 ## What is one request you have or change you suggest for this subject and/or your IT degree overall?
 
 Lecture feel a bit stale and students aren't really interacting, I recon something fun or more visual programming. 
-

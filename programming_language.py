@@ -6,7 +6,6 @@ Start time:8:00
 End time:8:50
 """
 
-
 class ProgrammingLanguage:
     def __init__(self, name = "", typing = "Static",reflection =False, year = 0):
 

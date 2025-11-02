@@ -7,7 +7,6 @@ from guitar import Guitar
 
 print("Guitars!")
 
-
 def main():
     # test
     guitars = []
