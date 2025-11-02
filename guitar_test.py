@@ -10,44 +10,27 @@ print("Guitars!")
 
 def main():
     # test
-    guitars = [Guitar("Gibson L-5 CES", 1922, 16035.40), Guitar("Line 6 JTV-59", 2010, 1512.9)]
+    guitars = []
 
+    guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
+    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
+
+    name = input("Name:")
+    while name != "":
+        year = int(input("Year:"))
+        while year < 0:
+            print("invalid year")
+            year = int(input("Year:"))
+
+        cost = float(input("Cost:"))
+        while cost < 0:
+            print("invalid cost")
+            cost = float(input("Cost:"))
+
+        guitars.append(Guitar(name, year, cost))
+        name = input("Name:")
     # displays all the guitars
     display_guitars(guitars)
-
-
-# def get_guitar(guitar):
-#     name = input("name: ")
-#     while name == "":
-#         print("invalid name")
-#         name = input("name: ")
-#     guitar.append(name)
-#
-#     # valid_input = False
-#     # while not valid_input:
-#     #     try:
-#     #         year = int(input("year: "))
-#     #         if year >= 0:
-#     #             valid_input = True
-#     #         else:
-#     #             print("must be non-negative")
-#     #     except ValueError:
-#     #         print("invalid number")
-#     # guitar.append(year)
-#     #
-#     # valid_input = False
-#     # while not valid_input:
-#     #     try:
-#     #         cost = int(input("cost: "))
-#     #         if cost >= 0:
-#     #             valid_input = True
-#     #         else:
-#     #             print("must be non-negative")
-#     #     except ValueError:
-#     #         print("invalid number")
-#     # guitar.append(cost)
-#     #
-#     # return
 
 
 def display_guitars(guitars):
